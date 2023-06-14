@@ -1,4 +1,4 @@
-import { Loader } from 'components/Loader';
+import { Loader } from 'components/Loader/Loader';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link, useLocation } from 'react-router-dom';

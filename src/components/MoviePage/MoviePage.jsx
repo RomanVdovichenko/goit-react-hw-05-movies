@@ -1,4 +1,5 @@
 import css from './MoviePage.module.css';
+import PropTypes from 'prop-types';
 
 export const MoviePage = ({ item }) => {
   return (
@@ -20,4 +21,15 @@ export const MoviePage = ({ item }) => {
       </div>
     </article>
   );
+};
+
+MoviePage.propTypes = {
+  item: PropTypes.shape({
+    title: PropTypes.string,
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string,
+    overview: PropTypes.string,
+    release_date: PropTypes.string,
+    poster_path: PropTypes.string,
+  }),
 };

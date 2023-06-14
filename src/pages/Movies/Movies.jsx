@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { movieSearchApi } from 'services/moviesApi';
 import toast from 'react-hot-toast';
-import { Loader } from 'components/Loader';
+import { Loader } from 'components/Loader/Loader';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);

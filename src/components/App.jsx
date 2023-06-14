@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import { lazy } from 'react';
 
 const load = componentName => {
-  return lazy(() => import(`../pages/${componentName}`));
+  return lazy(() => import(`../pages/${componentName}/${componentName}`));
 };
 
 const Home = load('Home');
@@ -12,7 +12,7 @@ const MovieDetails = load('MovieDetails');
 const Cast = load('Cast');
 const Reviews = load('Reviews');
 const Layout = lazy(() =>
-  import('./Layout').then(module => ({
+  import('./Layout/Layout').then(module => ({
     default: module.Layout,
   }))
 );
